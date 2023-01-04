@@ -1,0 +1,230 @@
+.navbar {
+  position: sticky;
+  overflow: hidden;
+  top: 0;
+  z-index: 99999;
+  width: 100%;
+  background: #fff;
+  box-shadow: 0px 52px 80px rgba(0, 0, 0, 0.0139364), 0px 15.6765px 24.1177px rgba(0, 0, 0, 0.02), 0px 6.51121px 10.0172px rgba(0, 0, 0, 0.0260636), 0px 2.35498px 3.62304px rgba(0, 0, 0, 0.04);
+}
+
+.navbar .container .navbar-brand img {
+  width: 100%;
+  max-width: 68px;
+  transition: .5s;
+}
+
+.navbar .container .navbar-toggler {
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar .container .navbar-toggler:focus {
+  border-color: #2db878;
+  box-shadow: 0 0 0 0.25rem rgba(83, 187, 139, 0.4);
+}
+
+.navbar .container .navbar-toggler ion-icon {
+  font-size: 38px;
+}
+
+.navbar .container .navbar-collapse .navbar-nav {
+  justify-content: space-between;
+  width: 100%;
+}
+
+.navbar .container .navbar-collapse .navbar-nav .menu {
+  display: flex;
+}
+
+.navbar .container .navbar-collapse .navbar-nav .menu .nav-link .active{
+  font-weight: 400;
+  color: #2DB878;
+}
+
+.navbar .container .navbar-collapse .navbar-nav .getStarted .nav-link {
+  font-weight: 400;
+}
+
+@media screen and (max-width: 991px) {
+  .navbar .container .navbar-brand img {
+    max-width: 62px;
+    transition: .5s;
+  }
+  .navbar .container .navbar-collapse {
+    position: fixed;
+    z-index: 100;
+    background-color: #fff;
+    box-shadow: 0px -70px 80px rgba(0, 0, 0, 0.0243888), 0px -21.103px 24.1177px rgba(0, 0, 0, 0.035), 0px -8.76509px 10.0172px rgba(0, 0, 0, 0.0456112), 0px -3.17016px 3.62304px rgba(0, 0, 0, 0.07);
+    top: 0;
+    width: 0%;
+    left: -350px;
+    height: 100%;
+    transition: 1s ease;
+    max-width: 350px;
+    padding: 2rem;
+    opacity: .4;
+  }
+  .navbar .container .navbar-collapse.showNavbar {
+    width: 75%;
+    left: 0px;
+    transition: 1s ease;
+    opacity: 1;
+  }
+  .navbar .container .navbar-collapse .navbar-nav {
+    width: 100%;
+  }
+  .navbar .container .navbar-collapse .navbar-nav .menu {
+    flex-direction: column;
+    opacity: 1;
+  }
+  .navbar .container .navbar-collapse .navbar-nav .menu .nav-link {
+    padding: .7rem 0;
+  }
+  .navbar .container .navbar-collapse .navbar-nav .menu .nav-link.active {
+    color: #2DB878;
+    font-weight: 500;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .navbar .container .navbar-toggler {
+    display: none;
+  }
+  .navbar .container .navbar-collapse .navbar-nav .menu .nav-link {
+    padding: 0;
+    margin: .5rem 1.3rem;
+    position: relative;
+  }
+  .navbar .container .navbar-collapse .navbar-nav .menu .nav-link.active {
+    color: #2DB878;
+    font-weight: 600;
+  }
+  .navbar .container .navbar-collapse .navbar-nav .menu .nav-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    position: absolute;
+    bottom: -5px;
+    transform: translateX(50%);
+    background-color: #2DB878;
+    transition: .3s ease;
+  }
+  .navbar .container .navbar-collapse .navbar-nav .menu .nav-link:hover::after {
+    width: 50%;
+    transition: .3s ease;
+  }
+  .navbar .container .navbar-collapse .navbar-nav .getStarted {
+    display: flex;
+  }
+  .navbar .container .navbar-collapse .navbar-nav .getStarted .polygon {
+    position: relative;
+  }
+  .navbar .container .navbar-collapse .navbar-nav .getStarted .polygon .clipath {
+    display: block;
+    background-color: #fff;
+    height: 100%;
+    position: absolute;
+    width: 130px;
+    top: -29px;
+    overflow: hidden;
+    left: -65px;
+    z-index: 1000;
+    height: 238%;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  }
+  .navbar .container .navbar-collapse .navbar-nav .getStarted::after {
+    content: '';
+    display: block;
+    background-color: #2DB878;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+  .navbar .container .navbar-collapse .navbar-nav .getStarted .buttonWrapper {
+    position: relative;
+    z-index: 20000;
+    padding-left: 7rem;
+  }
+  .navbar .container .navbar-collapse .navbar-nav .getStarted .buttonWrapper .nav-link {
+    background-color: #fff;
+    border-radius: 6px;
+    color: #2DB878;
+    font-weight: 500;
+    padding: .5rem 1.4rem;
+  }
+  .navbar .container .navbar-collapse .navbar-nav .getStarted .buttonWrapper .nav-link:hover {
+    background-color: #f2f2f2;
+  }
+}
+
+
+.app-container {
+  /* background-color: blue; */
+  width: 1343px;
+  height: 500px;
+  position: relative;
+  padding-top: 1px;
+}
+
+.app-container .flex-1 .group-1 .text-1{
+  width: 668px;
+  height: 162px;
+  /* background-color: aquamarine; */
+  margin-top: 84px;
+  margin-left: 100px;
+  color: #535353;
+  font-weight: 900;
+  font-size: 36px;
+}
+
+.app-container .flex-1 {
+  display: flex;
+}
+
+.app-container .flex-1 .group-1 .text-1 span{
+  color: #2DB878;
+
+}
+
+.app-container .flex-1 .group-1 .text-2{
+  width: 632px;
+  height: 108px;
+  /* background-color: blueviolet; */
+  color: #535353;
+  font-weight: 900px;
+  margin-left: 100px;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.app-container .flex-1 .group-1 .group-1 {
+  display: flex;
+}
+.app-container .group-1 .button-1 {
+  width: 180px;
+  height: 56px;
+  /* background-color: azure; */
+  margin-top: 45px;
+  margin-left: 100px;
+  background-color: #2DB878;
+  border-radius: 10px;
+}
+
+.app-container .group-1 .button-2 {
+  width: 180px;
+  height: 56px;
+  /* background-color: azure; */
+  margin-top: 45px;
+  margin-left: 10px;
+}
+
+.app-container .flex-1 .image {
+  /* background-color: blueviolet; */
+  margin-top: 76px;
+  /* background-color: aquamarine; */
+}
