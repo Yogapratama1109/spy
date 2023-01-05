@@ -48,6 +48,11 @@
   font-weight: 400;
 }
 
+.navbar .container .navbar-collapse .navbar-nav .getStarted .nav-link .icon-donasi {
+margin-right: 6px;
+margin-bottom: 4px;
+}
+
 @media screen and (max-width: 991px) {
   .navbar .container .navbar-brand img {
     max-width: 62px;
@@ -169,6 +174,7 @@
   height: 500px;
   position: relative;
   padding-top: 1px;
+
 }
 
 .app-container .flex-1 .group-1 .text-1{
@@ -186,9 +192,13 @@
   display: flex;
 }
 
-.app-container .flex-1 .group-1 .text-1 span{
-  color: #2DB878;
+.app-container .flex-1 .image .pic{
+  border-radius: 10px;
+}
 
+.app-container .flex-1 .group-1 .text-1 span{
+  color: #2DB878; 
+  font-family: Poppins;
 }
 
 .app-container .flex-1 .group-1 .text-2{
@@ -200,10 +210,12 @@
   margin-left: 100px;
   margin-top: 20px;
   font-size: 18px;
+   font-family: Poppins;
 }
 
 .app-container .flex-1 .group-1 .group-1 {
   display: flex;
+   font-family: Poppins;
 }
 .app-container .group-1 .button-1 {
   width: 180px;
@@ -211,20 +223,191 @@
   /* background-color: azure; */
   margin-top: 45px;
   margin-left: 100px;
-  background-color: #2DB878;
+  background-color: #46B654;
   border-radius: 10px;
+  color: white;
+}
+
+.app-container .group-1 .button-1 .btn-text{
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  margin-top: 13px;
 }
 
 .app-container .group-1 .button-2 {
   width: 180px;
   height: 56px;
-  /* background-color: azure; */
+  /* background-color: brown; */
   margin-top: 45px;
-  margin-left: 10px;
+  margin-left: 10px; 
+  padding-top: 12px;
+  color: #46B654;
+  border-radius: 10px;
+   font-family: Poppins;
+}
+
+.app-container .group-1 .button-2 .img-empat {
+  /* background-color: aqua; */
+  margin-left: 30px;
+  margin-bottom: 5px;
+}
+
+.app-container .group-1 .button-2 .text-btn {
+  /* background-color: aquamarine; */
+  margin-top: 40px;
+  margin-left: 11px;
+  font-weight: 600;
+  font-size: 18px;
+   font-family: Poppins;
 }
 
 .app-container .flex-1 .image {
   /* background-color: blueviolet; */
   margin-top: 76px;
   /* background-color: aquamarine; */
+}
+
+.app-container .main {
+  /* background-color: rgb(127, 239, 201); */
+  width: 1219px;
+  height: 285px;
+  margin-top: 94px;
+  margin-left: 97px;
+}
+
+.app-container .main .flex-2 {
+  display: flex;
+}
+
+.app-container .main .flex-2 .about{
+  /* background-color: aqua; */
+  width: 623px;
+  height: 130px;
+  margin-left: 41px;
+}
+
+.app-container .main .flex-2 .about h4 {
+  font-size: 20px;
+  font-weight: 600; 
+  color: #535353;
+  font-family: Poppins;
+}
+
+.app-container .main .flex-2 .about h3 {
+  color: #46B654;
+  font-size: 28px;
+  font-weight: 600; 
+}
+
+.app-container .main .flex-2 .about .p-1 {
+  color: #535353;
+  width: 623px;
+  height: 81px;
+  font-size: 18px;
+  font-weight: 400; 
+  /* background-color: #46B654; */
+  line-height: 27px;
+  font-family: Poppins;
+}
+
+.app-container .main .flex-2 .about p {
+  color: #535353;
+  font-size: 18px;
+  font-weight: 400; 
+}
+
+.app-container .main .flex-2 .about .flex-3 {
+  display: flex;
+}
+
+.app-container .main .flex-2 .about .flex-3 .satu{
+  width: 118px;
+  height: 74px;
+  /* background-color: #46B654; */
+}
+
+.app-container .main .flex-2 .about .flex-3 .satu .angka-satu{
+  font-size: 30px;
+  width: 30px;
+  height: 30px;
+  margin-left: 35%;
+  font-weight: 400;
+  color: #2DB878;
+  /* background-color: coral; */
+}
+
+.app-container .main .flex-2 .about .flex-3 .dua{
+  width: 185px;
+  height: 74px;
+  /* background-color: #46B654; */
+  margin-left: 70px;
+}
+
+.app-container .main .flex-2 .about .flex-3 .dua .angka-dua{
+  font-size: 30px;
+  width: 30px;
+  height: 30px;
+  margin-left: 35%;
+  font-weight: 400;
+  color: #2DB878;
+  /* background-color: coral; */
+}
+
+.app-container .main .flex-2 .about .flex-3 .dua .angka-dua .t-dua{
+  padding-left: 10px;
+}
+
+.app-container .main .flex-2 .about .flex-3 .tiga{
+  width: 185px;
+  height: 74px;
+  /* background-color: #46B654; */
+  margin-left: 70px;
+}
+
+.app-container .main .flex-2 .about .flex-3 .tiga .angka-tiga{
+  font-size: 30px;
+  width: 30px;
+  height: 30px;
+  margin-left: 35%;
+  font-weight: 400;
+  color: #2DB878;
+  /* background-color: coral; */
+}
+
+.app-container .main .section-bidang {
+  width: 307px;
+  height: 72px;
+  margin-top: 58px;
+  margin-bottom: 477px;
+}
+
+.app-container .main .section-bidang .text-satu {
+  font-size: 20px;
+  font-weight: 600;
+  color: #535353;
+}
+
+.app-container .main .section-bidang .text-dua {
+  font-size: 28px;
+  font-weight: 600;
+  color: #46B654;
+  font-family: Poppins;
+}
+
+.banner .wrapperBanner {
+  background: url('../image/5.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  padding: 5rem;
+}
+
+.banner .wrapperBanner .imagePreview {
+  position: relative;
+  width: 110%;
+  top: -60px;
+  transition: .5s;
 }

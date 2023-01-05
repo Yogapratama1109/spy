@@ -8,7 +8,12 @@ import Button from 'react-bootstrap/Button';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import logo from '../image/1.png'
-import image from '../image/2.png'
+import imagedua from '../image/2.png'
+import imagetiga from '../image/3.png'
+import imageempat from '../image/4.png'
+import iconDonasi from '../image/icon-donasi.png'
+import imagelima from '../image/5.png'
+import imageenam from '../image/6.png'
 
 
 const Home = () => {
@@ -40,7 +45,7 @@ const Home = () => {
                           <div class="clipath"></div>
                       </div>
                       <div class="buttonWrapper">
-                        <a href="#" class="nav-link">Get Started</a>
+                      <a href="#" class="nav-link"><img className='icon-donasi' src={iconDonasi} alt=""/>Donasi</a>
                       </div>
                   </div>
 
@@ -60,16 +65,51 @@ const Home = () => {
               </div>
               <div className='group-1'>
                 <div className='button-1'>
-
+                  <p className='btn-text'>Donasi Sekarang</p>
                 </div>
                 <div className='button-2'>
-
+                <img className='img-empat' src={imageempat} alt=""/><span className='text-btn'>Lihat Video</span>
                 </div>
               </div>
             </div>
             <div className='image'>
-              <img src={image} alt=""/>
+              <img className='pic' src={imagedua} alt=""/>
             </div>
+          </div>
+          <div className='main'>
+            <div className='flex-2'>
+              <img className='img' src={imagetiga} alt=""/>
+              <div className='about'>
+                <h4>Tentang Kami</h4>
+                <h3>Apa Sih Sahabat Peduli Yatim Tuh ?</h3>
+                <p className='p-1'>Sahabat Peduli Yatim adalah sebuah komunitas sosial agama, dengan konsep mengadakan santunan dari masjid ke masjid setiap bulannya.</p>
+                <div className='flex-3'>
+                  <div className='satu'>
+                    <p className='angka-satu'>5</p><p className='t-satu'>Tahun Berdiri</p>
+                  </div>
+                  <div className='dua'>
+                    <p className='angka-dua'>40</p><p className='t-dua'>Orang Volunteer SPY</p>
+                  </div>
+                  <div className='tiga'>
+                    <p className='angka-tiga'>56</p><p className='t-tiga'>Kegiatan Terencana</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className='section-bidang'>
+                <h4 className='text-satu'>Bergerak Dibidang</h4>
+                <h3 className='text-dua'>Dibidang Apa Aja Ya?</h3>
+            </div>
+            {/* Banner */}
+            <div class="banner">
+                <div class="wrapperBanner">
+                    <div class="imagePreview">
+                      <img className='img' src={imageenam} alt=""/>
+                    </div>
+
+                </div>
+            </div>
+            {/* End Banner */}
           </div>
         </div>
     </>
